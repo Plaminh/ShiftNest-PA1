@@ -1,29 +1,13 @@
-# AI Usage Log - ShiftNest PA#1
+## 2026-10-17 — ShiftNest wireframe design
 
-## 2026-10-15 - Main flow and wireframe references
+Tool: ChatGPT, Google Stitch, and Figma.
 
-Tool: ChatGPT / Codex.
+Asked for: Help design three low-fidelity desktop wireframes for ShiftNest, following the shift-swap workflow from Employee A to Employee B to Shift Manager approval.
 
-Asked for: Suggest three wireframes based on the ShiftNest functional requirements and generate reference layouts.
+Kept: The main workflow, the three required screens, and the essential functions specified in the assignment.
 
-Kept: The flow: A sends a request, B responds, and an independent Shift Leader or Manager reviews it.
+Changed: Created multiple wireframe versions, collected feedback and evaluations from team members, and selected one version to refine into the final design using the wireframing and design tools.
 
-Changed: Used the same shift across all three screens and clarified that B's acceptance does not change the assignment until approval.
+Rejected: Design ideas that added unrelated features or extra screens outside the required shift-swapping workflow.
 
-Rejected: None
-
-By hand: Selected Figma for the team's design work. The team recreate and review the AI-generated reference layouts in Figma before exporting the submission images.
-
-## 2026-10-15 - Proposal refinement
-
-Tool: ChatGPT / Codex.
-
-Asked for: Refine the proposal against the rubric and functional requirements, and fix its Markdown formatting.
-
-Kept: The six required sections, one-shop scope and descriptions of the three transfer screens.
-
-Changed: Repaired headings, tables and lists; clarified user goals, scope and action outcomes; aligned the planned image filenames.
-
-Rejected: Unnecessary submission instructions and notes that were not relevant to the proposal.
-
-By hand: Provided the existing draft and revision requirements. The wording and formatting edits were AI-assisted.
+By hand: Reviewed the generated designs, considered team feedback, and participated in selecting and refining the final wireframe version. I will update this entry if further manual changes are made.

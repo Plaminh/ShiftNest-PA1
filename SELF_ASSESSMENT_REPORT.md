@@ -1,32 +1,16 @@
-# Self-assessment - PA#1: Idea and Wireframe
+Self-assessment — PA#1: Idea and Wireframes
+Submitted by: <24127211> — <Ho Phan Nhu Nguyet>
 
-## Submitted by
+What I did - About main flow of our idea and creating 3 screen wireframes
 
-| Full name | Student ID |
-| --- | --- |
-| [Full name] | [Student ID] |
-| [Full name] | [Student ID] |
-| [Full name] | [Student ID] |
+I created multiple versions of the ShiftNest wireframes based on the required shift-swapping workflow. The team reviewed and evaluated the different versions, shared feedback, and selected one version to refine into the final design.
 
-## Total claimed
+The final design follows the required workflow: Employee A sends a shift-swap request → Employee B accepts → the Shift Manager approves → the shift is transferred from A to B.
 
-**TBD / 100**
+Final screens: wireframes/ — three screens covering Send Swap Request, Respond to Request, and Review and Approve.
 
-## Assessment
+AI usage declaration: AI-LOG.md
 
-| Criterion | Max | We claim | Evidence |
-| --- | ---: | ---: | --- |
-| The problem and the users | 20 | TBD | [PROPOSAL.md, sections 2-3](PROPOSAL.md#2-the-problem): scheduling and transfer problems, user roles and their goals. |
-| Scope, with a Not building list | 15 | TBD | [PROPOSAL.md, section 5](PROPOSAL.md#5-scope): features to implement and a specific Not building list. |
-| Three screens of the main flow | 35 | TBD | No evidence yet. Required exports: `wireframes/01-send-request.png`, `wireframes/02-respond-request.png` and `wireframes/03-approve-request.png`. |
-| Each screen explained | 15 | TBD | [PROPOSAL.md, section 6](PROPOSAL.md#6-screens): each user's goal, actions, outcomes and next step, plus supporting navigation destinations. |
-| AI-LOG.md | 15 | TBD | [AI-LOG.md](AI-LOG.md): two entries covering Main flow and wireframe references, and Proposal refinement. |
-| Total | 100 | TBD | Sum of the five scores above. |
+What I did not manage
 
-## What we did not manage
-
-[To be completed.]
-
-## What we would do differently
-
-[To be completed.]
+The wireframes have not yet been developed into a fully interactive prototype. The current work focuses on the main workflow and the three essential screens.
