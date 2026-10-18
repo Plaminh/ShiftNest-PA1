@@ -1,4 +1,4 @@
-# Self-assessment — PA#1: Idea and Wireframe
+# Self-assessment — PA#1: Idea and Wireframes
 
 ## Submitted by
 
@@ -8,22 +8,23 @@
 | Hồ Phan Như Nguyệt | 24127211 |
 | Huỳnh Thái Hoàng | 24127171 |
 
-## Rubric assessment
+**Total we claim: 100 / 100**
 
-| Criterion | Maximum | Self-assessed | Evidence |
+## Rubric Assessment
+
+| Criterion | Max | We claim | Evidence |
 | --- | ---: | ---: | --- |
-| 1. The problem and the users | 20 | 20 | `PROPOSAL.md`, Sections 2–3: describes the scheduling and shift-transfer problem, its consequences, and the target users with their goals and permissions. |
-| 2. Scope, with a Not building list | 15 | 15 | `PROPOSAL.md`, Section 5: defines the MVP features, validation rules and explicit exclusions under **In scope** and **Not building**. |
-| 3. Three screens of the main flow | 35 | 35 | `wireframes/01-send-transfer-request.png`, `02-respond-to-request.png` and `03-review-and-approve.png`: show Nguyet sending, Hoang responding and Minh independently approving the same transfer. The shift remains assigned to Nguyet until approval. |
-| 4. Each screen explained | 15 | 15 | `PROPOSAL.md`, Section 6: explains each screen’s user, purpose, information, actions, outcomes and navigation destinations. |
-| 5. AI-LOG.md | 15 | 15 | `AI-LOG.md`: records the tools, requests, work kept or changed, rejected suggestions and the team’s own contributions. |
+| 1. The problem and the users | 20 | 20 | `PROPOSAL.md`, Sections 2–3: identifies the scheduling and shift-transfer problems, their consequences, and the target users with their respective goals and responsibilities. |
+| 2. Scope, with a Not building list | 15 | 15 | `PROPOSAL.md`, Section 5: defines the MVP features, scheduling rules, and explicit exclusions under **In scope** and **Not building**. |
+| 3. Three screens of the main flow | 35 | 35 | `wireframes/01-send-transfer-request.png`, `wireframes/02-respond-to-request.png`, and `wireframes/03-review-and-approve.png`: illustrate Nguyet requesting a transfer, Hoang accepting, and Minh independently approving it. The shift assignment changes only after approval. |
+| 4. Each screen explained | 15 | 15 | `PROPOSAL.md`, Section 6: explains each screen's purpose, user, displayed information, available actions, expected outcomes, and navigation. |
+| 5. AI-LOG.md | 15 | 15 | `AI-LOG.md`: documents the AI tools used, tasks requested, retained and modified outputs, rejected suggestions, and the team's manual contributions and decisions. |
 | **Total** | **100** | **100** | |
 
-## What we did not manage
+## What We Did Not Manage
 
-No required PA#1 deliverables remain incomplete.
+The wireframes are static and do not provide interactive navigation. They illustrate the three main steps of a successful shift transfer, while alternative outcomes, such as declining or rejecting a request, are explained in `PROPOSAL.md` rather than presented as separate screens.
 
-## What we would do differently
+## What We Would Do Differently
 
-Agree on the sample users, shift details and terminology before drafting
-the wireframes to reduce inconsistencies and repeated revisions.
+We would establish consistent sample users, shift details, terminology, and screen requirements before creating the wireframes. This would reduce repeated revisions and improve consistency between the proposal and final designs.

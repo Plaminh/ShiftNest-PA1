@@ -82,6 +82,7 @@ Minh, an independent Shift Leader, wants to approve or reject the accepted reque
 | My Availability | Dated availability editor. |
 | Team Schedule | Staff calendar for Leaders and Managers. |
 | Shift Requests | Sent/received requests and the authorized approval queue; selecting a request opens its details. The sender can cancel a pending request here. |
-| My Profile | Personal details, avatar and password settings. |
-| Notifications | Updates linking to the related shift or request. |
-| History | A list of the signed-in user's completed or ended transfer requests (approved, rejected, declined, cancelled or expired). Selecting an entry opens the related request details in read-only form. |
+| My Profile / profile control | The signed-in name or profile icon opens personal details, avatar and password settings. |
+| Notifications | The header bell opens updates that link to the related shift or request. |
+| History | A filtered view associated with Shift Requests, showing the signed-in user's completed or ended requests (approved, rejected, declined, cancelled or expired). Selecting an entry opens the related request details in read-only form. |
+| Back to My Schedule / Cancel (screen 1) | **Back to My Schedule** returns to the personal schedule. **Cancel** closes the unsent transfer form and returns there without creating a request. |
