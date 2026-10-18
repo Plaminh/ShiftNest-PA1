@@ -1,144 +1,127 @@
+# AI Usage Log — ShiftNest PA#1
 
-# AI-LOG.md
+## 2026-10-17 — 01. Review the approval screen
 
-2026-10-17 — 01. Review redundant UI and identify the approval screen
+**Tool:** Figma Agents
 
-Tool: Figma Agents
+**Asked for:** Identify the selected screen and review unnecessary UI against the Functional Requirements Specification.
 
-Asked for: "Track for any UI redundant like components, contents,..." using the attached Functional Requirements Specification, followed by "Say which screen corresponding".
+**Kept:** The request ID, sender and receiver, shift date/time, status, and Approve/Reject actions.
 
-Kept: The review identified the selected screen as P06 — Shift Requests → Approval Dialog, covered by §3.3, for requests in PENDING_APPROVAL. Recommended retaining the request ID, sender → receiver summary, shift date/time, status, and Approve/Reject actions.
+**Changed:** No design edits at this step. The review identified the screen as the transfer approval dialog and suggested clearer labels and approval checks.
 
-Changed: No design changes at this review step. The agent recommended simpler headings, transfer terminology, approval checks, availability/opening-hours warnings, and an optional rejection reason.
+**Rejected:** The review recommended removing healthcare, payroll, overtime and roster-audit details because they were outside the MVP.
 
-Rejected: Recommended removing the hours/roster variance audit, minimum-hours and overtime checks, nursing departments/cost centers, and payroll/break details because they were not required by the single-shop MVP. Also flagged "Swap", "Awaiting Final Sign-off", and manager-only approval wording for correction.
+**By hand:** The team selected the screen and supplied the requirements.
 
-By hand: The user selected the screen, supplied the requirements, and asked which required page/function it represented. No manual design edits were described in the chat.
+## 2026-10-17 — 02. Simplify the approval screen
 
-## 2026-10-17 — 02. Apply the approval-screen cleanup
+**Tool:** Figma Agents
 
-Tool: Figma Agents
+**Asked for:** Apply the approval-screen recommendations.
 
-Asked for: "Help me to do that based on above recommendations".
+**Kept:** The screen structure, core transfer information and Approve/Reject actions.
 
-Kept: The approval-screen structure and core transfer information, with clearer labels and Approve/Reject actions.
+**Changed:** The agent reported removing unrelated content, replacing “Swap” with “Transfer”, and adding receiver acceptance, account status, shift timing, overlap checks, availability/opening-hours warnings and an optional rejection reason.
 
-Changed: The agent reported removing healthcare, payroll, overtime, and roster-audit content; replacing "Swap" with "Transfer"; adding receiver acceptance, active-account, shift-timing, and overlap checks; adding availability/opening-hours status and approval safeguards; and including an optional rejection reason.
+**Rejected:** The out-of-scope content identified in entry 01.
 
-Rejected: The out-of-scope content and terminology identified in entry 01.
+**By hand:** No manual design edits were recorded. These changes describe a static wireframe, not working validation.
 
-By hand: No manual design edits were described. The agent explicitly stated that the result remained a static design and that approval validation was not functional.
+## 2026-10-17 — 03. Use a consistent coffee-shop example
 
-## 2026-10-17 — 03. Change the sample concept and staff names
+**Tool:** Figma Agents
 
-Tool: Figma Agents
+**Asked for:** Replace the nursing scenario with a coffee shop and use Nguyet, Hoang and Minh as the sample users.
 
-Asked for: Change the UI examples from a nursing concept to a coffee shop, rename Alex to Nguyet, Jordan to Hoang, and the Shift Supervisor to Minh.
+**Kept:** Nguyet as sender, Hoang as receiver and Minh as the independent Shift Leader reviewing the request.
 
-Kept: The coffee-shop concept and the names Nguyet (sender), Hoang (receiver), and Minh (Shift Leader/approver) across the three transfer screens.
+**Changed:** The agent reported updating names, initials, signed-in users and coffee-shop content across the three screens. Position and qualification details were simplified further in entry 07.
 
-Changed: The agent reported replacing nursing roles with Barista/Senior Barista and hospital locations with Coffee bar/Opening shift. It also updated avatar initials, notification and workflow labels, and signed-in names to match the sample users. Structured position/qualification details were further simplified during the later Codex MVP cleanup in entry 07.
+**Rejected:** Hospital terminology and the original sample names because they did not match the chosen scenario.
 
-Rejected: Nursing/hospital examples because the user chose a coffee-shop scenario. Replaced the original sample names Alex and Jordan with the user-selected names Nguyet and Hoang to keep the examples consistent across all three screens.
+**By hand:** The team chose the scenario and replacement names.
 
-By hand: The user chose the coffee-shop concept and replacement names. No manual Figma edits were described.
+## 2026-10-17 — 04. Review labels and transfer rules
 
-## 2026-10-17 — 04. Review preview labels, missing UI, and inconsistent requirement wording
+**Tool:** Figma Agents
 
-Tool: Figma Agents
+**Asked for:** Check preview labels, missing information and transfer rules against the requirements.
 
-Asked for: Reread the Functional Requirements Specification, determine whether "STATE PREVIEW: AFTER INITIATION", "WIREFRAME SPEC COMPONENT", and "Post-Action State Output Preview" belonged in the application UI, and inspect missing UI for specific functions.
+**Kept:** Suggestions to clarify shift selection, the optional transfer reason, request statuses and approval safeguards. The sender remains assigned until approval; unresolved requests expire when the shift starts.
 
-Kept: The distinction between wireframe documentation and application UI. The review also flagged the need to clarify shift selection and optional transfer reasons, retain correct approval safeguards, use the defined transfer statuses, and explain that requests expire when the shift starts while the sender remains assigned until approval.
+**Changed:** No design edits at this step. The agent also suggested additional states, which the team narrowed in entry 05.
 
-Changed: No design changes at this review step. The agent also proposed additional pending/outcome/error/warning states and request-list/history coverage; the user narrowed that scope in entry 05.
+**Rejected:** The review flagged fixed 24-hour expiry, the undefined PENDING_B status, manager-only approval wording and “Marketplace” as inconsistent with the requirements.
 
-Rejected: The review identified fixed 24-hour expiry wording, the undefined PENDING_B status, manager-only approval wording, "Marketplace", and technical escalation labels as inconsistent or unnecessary for the requirements.
+**By hand:** The team supplied the review questions.
 
-By hand: The user supplied the review questions. No manual design edits were described.
+## 2026-10-17 — 05. Keep three screens with one state each
 
-## 2026-10-17 — 05. Keep one state per screen and remove wireframe-only content
+**Tool:** Figma Agents
 
-Tool: Figma Agents
+**Asked for:** Focus on the three main states and remove wireframe-only labels and extra previews.
 
-Asked for: Pick one state for each screen, focus only on the three main screen states, and remove the preview/specification labels instead of covering every missing state.
+**Kept:** Nguyet preparing a request, Hoang responding to it and Minh reviewing the accepted request.
 
-Kept: Three screens: Send Transfer Request before submission by Nguyet; Incoming Shift Transfer Request awaiting Hoang's Accept/Decline response; and Review Shift Transfer awaiting Minh's approval.
+**Changed:** The agent reported removing preview/specification labels, post-action panels, specification footers and dimension labels.
 
-Changed: The agent reported removing "STATE PREVIEW: AFTER INITIATION", "WIREFRAME SPEC COMPONENT", and "Post-Action State Output Preview", together with the extra post-action panels, wireframe-specification footers, and dimension labels. No additional screens or alternative states were added.
+**Rejected:** Adding every possible state or showing an actionable form and its completed result together.
 
-Rejected: Expanding the wireframes to cover every state or displaying the actionable state and its post-action result together.
+**By hand:** The team set the three-screen scope.
 
-By hand: The user explicitly set the one-state-per-screen scope. No manual Figma edits were described.
+## 2026-10-17 — 06. Check the three screens against the requirements
 
-## 2026-10-17 — 06. Review ShiftNest wireframes against the Functional Requirements
+**Tool:** Codex with Figma tools
 
-Tool: Codex with Figma tools
+**Asked for:** Review the three existing screens for missing or unclear information.
 
-Asked for: Compare the UI components in the three ShiftNest wireframes with the Functional Requirements Specification and suggest missing or unclear elements. Review only Send Transfer Request, Respond to Request, and Review and Approve, with one state per screen.
+**Kept:** Suggestions to show the store name and notifications, clarify where the sender selects a shift, and explain that receiver acceptance only sends the request for approval.
 
-Kept: The requirements comparison and suggestions to add the saved store name and notifications entry point, explain that accepting a request does not transfer the shift, and clarify where the sender selects a shift.
+**Changed:** The review stayed within the three selected screens.
 
-Changed: Limited the review to the three existing screens. Missing alternative states or other application pages were not treated as gaps in these wireframes.
+**Rejected:** Requiring all application pages or every request state for these wireframes.
 
-Rejected: Expanding the review to require every request state or the full application UI.
+**By hand:** No manual design edits were recorded in this review.
 
-By hand: No user-made edits were recorded in this session.
+## 2026-10-17 — 07. Update the wireframes in Figma
 
-## 2026-10-17 — 07. Update the three ShiftNest wireframes in Figma
+**Tool:** Codex with Figma tools and browser UI control
 
-Tool: Codex with Figma tools and browser UI control
+**Asked for:** Apply the proposed clarifications and remove details beyond the MVP.
 
-Asked for: Apply the proposed additions and clarifications directly in Figma and remove details beyond the MVP model.
+**Kept:** The three-screen structure and one state per screen.
 
-Kept: Added the sample store name "My Store", notification bell icons, a Back to My Schedule link, an acceptance explanation, approval checks, and the sender's transfer reason on the review screen. Distinguished Shift note from Reason for transfer and identified Minh as a Shift Leader.
+**Changed:** Added “My Store”, notification icons, Back to My Schedule, the acceptance explanation, approval checks and the transfer reason on the review screen. Separated the shift note from the transfer reason, identified Minh as a Shift Leader and converted work-area/position details into a free-text note. Codex visually checked the three screens.
 
-Changed: Converted work-area and position information into a free-text shift note. Replaced the qualification message with a current conflict-check message that explains checks run again on approval. Kept three screens with one state each.
+**Rejected:** Qualification checks and break-duration details because they were outside the requirements.
 
-Rejected: Role-qualification checks and the sample break-duration detail, which are not specified in the MVP requirements.
+**By hand:** No manual design edits were recorded; Codex applied the Figma changes.
 
-By hand: No user-made edits were recorded. Codex edited the Figma layers directly and visually checked all three screens. This work covered wireframes, not backend implementation or functional testing.
+## 2026-10-17 — 08. Draft screen explanations and a scoped self-assessment
 
-## 2026-10-17 — 08. Revise the coffee-shop sample reason and refine spacing
+**Tool:** Codex
 
-Tool: Codex with browser UI control for Figma
+**Asked for:** Review the three-screen flow, screen explanations and AI log; clarify rejection reasons; then remove the companion README.
 
-Asked for: Replace the transfer reason with one suited to the coffee-shop concept across all three screens and improve spacing.
+**Kept:** The three wireframes and their shared example. Static wireframes were accepted as a valid submission format.
 
-Kept: Used the same sample reason on all three screens: "Attending a latte art workshop. Could you cover my opening shift?"
+**Changed:** Codex drafted screen explanations and a self-assessment covering three criteria, clarified rejection reasons, then deleted the README and removed its evidence references at the team's request. The assessment was later expanded to all five criteria in entry 09.
 
-Changed: Removed the remaining old reason text, deleted an empty spacer above the response-screen title, standardized card padding and section gaps to 24 px where adjusted, matched the send-screen title to the other screens at 32 px with a 40 px line height, reduced approval-footer vertical padding to 16 px, and aligned the approval action buttons to the right. Visually checked the final layout of each screen.
+**Rejected:** Requiring clickability or additional screens for this milestone.
 
-Rejected: The previous sample reason about a doctor appointment because the user requested a reason connected to the coffee-shop concept. The latte-art workshop example better matches that request and was used consistently across all three screens.
+**By hand:** The team set the review scope and requested removal of the README. Codex made the document edits.
 
-By hand: The user chose the coffee-shop concept and requested the content and spacing corrections. No user-made Figma edits were recorded; Codex applied the changes through the Figma browser UI.
+## 2026-10-18 — 09. Align the proposal and self-assessment
 
+**Tool:** ChatGPT / Codex
 
-## 2026-10-17 — 09. Review the rubric and clarify the three-screen flow
+**Asked for:** Synchronize the proposal with the wireframes and assess all five rubric criteria.
 
-Tool: Codex
+**Kept:** The idea, MVP scope and transfer flow using Nguyet, Hoang and Minh for the shift on 24 October 2026, 07:00–15:30.
 
-Asked for: Review only Three screens of the main flow, Each screen explained and AI-LOG.md; write a scoped self-assessment, add rejection reasons, re-mark without using PROPOSAL.md, and improve the evidence to maximize the score.
+**Changed:** Updated the proposal's sample details and image paths, explained the History destination, and completed the five-row self-assessment with evidence references. Names and student IDs remained placeholders pending the team's details.
 
-Kept: The three existing wireframes and their consistent example. Added Wireframes/README.md with one explanation per screen, the handoff between different actors, outcomes for each action, and a table of visible controls and destinations. Used this evidence to update the three requested self-assessment criteria.
+**Rejected:** Inventing personal information, adding features or screens, and deducting marks for user research or a flow diagram that the rubric did not require.
 
-Changed: Made the rejection reasons in entries 03 and 08 explicit. Replaced the earlier restricted assessment with an assessment that also cites the new companion explanations. The report claims 65/65 across the reviewed criteria, subject to instructor grading.
-
-Rejected: Filename-related and proposal-comparison deductions in the revised review because the user explicitly excluded PROPOSAL.md and allowed freestyle filenames. Did not expand the work into unrelated rubric criteria or extra screen exports because the user limited the review to these three criteria and the rubric permits text to explain destinations and outcomes.
-
-By hand: The user set the review scope, requested the rejection reasons and asked to maximize the score. Codex wrote the companion explanations, updated the scoped report and appended this entry. No manual design edits or implemented application behavior are claimed for this work.
-
-
-## 2026-10-17 — 10. Remove the companion README and retain the requested score
-
-Tool: Codex
-
-Asked for: Delete the wireframe README and mark Each screen explained at the maximum; accept the screens as non-clickable wireframes.
-
-Kept: The three original PNGs and the requested 15/15 claim for Each screen explained, based on the explanations embedded in the wireframes. Static wireframes do not require clickability.
-
-Changed: Deleted Wireframes/README.md and removed its evidence links from SELF_ASSESSMENT_REPORT.md. Revised the report to cite the wireframes themselves and distinguish the claimed score from instructor grading and the rubric’s separate paragraph requirement. Entry 09 remains a historical record of the now-deleted document.
-
-Rejected: Retaining the companion README because the user explicitly requested its deletion. Did not treat lack of clickability as a scoring deficiency because the rubric accepts static wireframes.
-
-By hand: The user requested the deletion and maximum explanation score. Codex applied the document changes; the wireframe images were not edited.
+**By hand:** The team supplied the requested corrections. Codex revised the documents.

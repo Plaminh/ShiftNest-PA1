@@ -1,17 +1,29 @@
-# Self-assessment - PA#1: Idea and Wireframe
+# Self-assessment — PA#1: Idea and Wireframe
 
-### 3. Three screens of the main flow — 35 / 35
+## Submitted by
 
-The numbered screens clearly follow one transfer from Nguyet to Hoang, with independent approval by Minh. They consistently show 24 October 2026, 07:00–15:30 and the same transfer reason. The submitted 1280 × 960 images are readable. The wireframes distinguish the three actors and make clear that acceptance alone does not transfer the shift. The full-mark claim reflects the clear main-flow sequence. 
+| Full name | Student ID |
+| --- | --- |
+| Phan Lê Anh Minh | 24127082 |
+| Hồ Phan Như Nguyệt | 24127211 |
+| Huỳnh Thái Hoàng | 24127171 |
 
-### 4. Each screen explained — 15 / 15
+## Rubric assessment
 
-We claim full marks based on the explanations embedded in the wireframes: screen 1 identifies requesting a colleague to cover a shift, screen 2 explains responding and that acceptance sends the request for approval, and screen 3 explains reviewing the transfer and approval checks. Action labels and explanatory text communicate the intended progression and that Nguyet remains assigned until approval. 
+| Criterion | Maximum | Self-assessed | Evidence |
+| --- | ---: | ---: | --- |
+| 1. The problem and the users | 20 | 20 | `PROPOSAL.md`, Sections 2–3: describes the scheduling and shift-transfer problem, its consequences, and the target users with their goals and permissions. |
+| 2. Scope, with a Not building list | 15 | 15 | `PROPOSAL.md`, Section 5: defines the MVP features, validation rules and explicit exclusions under **In scope** and **Not building**. |
+| 3. Three screens of the main flow | 35 | 35 | `wireframes/01-send-transfer-request.png`, `02-respond-to-request.png` and `03-review-and-approve.png`: show Nguyet sending, Hoang responding and Minh independently approving the same transfer. The shift remains assigned to Nguyet until approval. |
+| 4. Each screen explained | 15 | 15 | `PROPOSAL.md`, Section 6: explains each screen’s user, purpose, information, actions, outcomes and navigation destinations. |
+| 5. AI-LOG.md | 15 | 15 | `AI-LOG.md`: records the tools, requests, work kept or changed, rejected suggestions and the team’s own contributions. |
+| **Total** | **100** | **100** | |
 
-### 5. AI-LOG.md — 15 / 15
+## What we did not manage
 
-The log names tools and specific requests, describes what was kept and changed, and records rejected suggestions with reasons grounded in the chosen scenario or MVP scope. It distinguishes user decisions from AI edits. The latest entries record this rubric review, rejection-reason clarification, documentation revision and subsequent removal of the companion README at the user’s request. These details support the rubric’s top band.
+No required PA#1 deliverables remain incomplete.
 
-### What we did not manage — reviewed criteria only
+## What we would do differently
 
-No clickable prototype was produced; static wireframes are an accepted submission format, so this is not a scoring deficiency. Runtime validation and notification delivery are intended behaviors, not functionality demonstrated by these artifacts.
+Agree on the sample users, shift details and terminology before drafting
+the wireframes to reduce inconsistencies and repeated revisions.

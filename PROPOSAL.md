@@ -4,9 +4,9 @@
 
 | Full name | Student ID |
 | --- | --- |
-| [Full name] | [Student ID] |
-| [Full name] | [Student ID] |
-| [Full name] | [Student ID] |
+| Phan Lê Anh Minh | 24127082 |
+| Hồ Phan Như Nguyệt |  24127211 |
+| Huỳnh Thái Hoàng | 24127171 |
 
 ## 2. The problem
 
@@ -23,13 +23,13 @@ Small cafes and bakeries often arrange shifts and last-minute changes through ch
 
 ## 4. Main flow
 
-The main flow transfers one future shift from A to B. The sender and receiver are active Employees or Shift Leaders. The reviewer is an authorized Shift Leader or Manager who is neither sender nor receiver.
+The main flow transfers one future shift from Nguyet to Hoang. Nguyet and Hoang are active Employees or Shift Leaders. Minh is the authorized Shift Leader reviewing the request and is neither the sender nor the receiver.
 
-1. **Request:** A selects an assigned shift in My Schedule, chooses B and sends a request. Its status becomes **Waiting for receiver**; A remains assigned.
-2. **Response:** B opens the request and selects **Accept** or **Decline**. Accept sends it for approval; Decline ends the request. Acceptance alone does not change the assignment.
-3. **Approval:** The reviewer checks the shift and B's eligibility. **Approve transfer** assigns the shift to B and marks the request approved together. **Reject** leaves A assigned. Both employees can see the outcome and updated schedule on refresh.
+1. **Request:** Nguyet selects the assigned shift in My Schedule, chooses Hoang and sends a request. Its status becomes **Waiting for receiver**; Nguyet remains assigned.
+2. **Response:** Hoang opens the request and selects **Accept** or **Decline**. Accept sends it to Minh for approval; Decline ends the request. Acceptance alone does not change the assignment.
+3. **Approval:** Minh checks the shift and Hoang's eligibility. **Approve transfer** assigns the shift to Hoang and marks the request approved together. **Reject** leaves Nguyet assigned. Both employees can see the outcome and updated schedule on refresh.
 
-A can cancel while the request is pending; the shift remains assigned to A. A shift can have only one pending transfer. Changing its date, time or assignee, or cancelling it, ends the pending request. Requests still unresolved when the shift starts expire when checked.
+Nguyet can cancel while the request is pending; the shift remains assigned to Nguyet. A shift can have only one pending transfer. Changing its date, time or assignee, or cancelling it, ends the pending request. Requests still unresolved when the shift starts expire when checked.
 
 ## 5. Scope
 
@@ -53,25 +53,25 @@ A can cancel while the request is pending; the shift remains assigned to A. A sh
 
 ## 6. Screens
 
-The three wireframes follow the same request from the sender, receiver and reviewer perspectives. The shared example is a shift on 24 October 2026, 08:00-12:00, initially assigned to A.
+The three wireframes follow the same request from the sender, receiver and reviewer perspectives. The shared example is a shift on 24 October 2026, 07:00-15:30, sent by Nguyet to Hoang and reviewed by Minh, a Shift Leader. The shift remains assigned to Nguyet until approval.
 
 ### Screen 1 - Send Transfer Request
 
-**Image:** `wireframes/01-send-request.png`
+**Image:** `wireframes/01-send-transfer-request.png`
 
-A wants a colleague to cover the shift. My Schedule shows the selected shift and a transfer form for selecting an active Employee or Shift Leader as receiver, with an optional reason. **Send request** records the request, shows confirmation and notifies B, who next opens screen 2. A remains assigned. **Cancel** closes the unsent form and returns to the schedule. Sending is blocked if the shift is ineligible or already has a pending request.
+Nguyet wants Hoang to cover the shift. My Schedule shows the selected shift and a transfer form for selecting an active Employee or Shift Leader as receiver, with an optional reason. **Send request** records the request, shows confirmation and notifies Hoang, who next opens screen 2. Nguyet remains assigned. **Cancel** closes the unsent form and returns to the schedule. Sending is blocked if the shift is ineligible or already has a pending request.
 
 ### Screen 2 - Respond to Transfer Request
 
-**Image:** `wireframes/02-respond-request.png`
+**Image:** `wireframes/02-respond-to-request.png`
 
-B wants to decide whether to cover A's shift. The received request shows A, the shift date/time, reason and status. **Accept** displays **Waiting for approval** and sends the request to the reviewer in screen 3; A remains assigned. **Decline** ends the request and displays the result without changing the schedule. The request remains in the list with its history, and response actions become unavailable once B has responded.
+Hoang wants to decide whether to cover Nguyet's shift. The received request shows Nguyet, the shift date/time, reason and status. **Accept** displays **Waiting for approval** and sends the request to Minh in screen 3; Nguyet remains assigned. **Decline** ends the request and displays the result without changing the schedule. The request remains in the list with its history, and response actions become unavailable once Hoang has responded.
 
 ### Screen 3 - Review Transfer Request
 
-**Image:** `wireframes/03-approve-request.png`
+**Image:** `wireframes/03-review-and-approve.png`
 
-An independent Shift Leader or Manager wants to approve or reject the accepted request. The screen shows A, B, the shift, B's acceptance, availability and any overlapping shifts. **Approve transfer** rechecks the conditions and displays **Approved**, with B as the new assignee. **Reject**, with an optional reason, displays **Rejected** and keeps A assigned. Errors block approval; warnings require confirmation. The result stays on this screen, further actions are disabled, and both employees are notified.
+Minh, an independent Shift Leader, wants to approve or reject the accepted request. The screen shows Nguyet, Hoang, the shift, Hoang's acceptance, availability and any overlapping shifts. **Approve transfer** rechecks the conditions and displays **Approved**, with Hoang as the new assignee. **Reject**, with an optional reason, displays **Rejected** and keeps Nguyet assigned. Errors block approval; warnings require confirmation. The result stays on this screen, further actions are disabled, and both employees are notified.
 
 ### Supporting navigation
 
@@ -84,3 +84,4 @@ An independent Shift Leader or Manager wants to approve or reject the accepted r
 | Shift Requests | Sent/received requests and the authorized approval queue; selecting a request opens its details. The sender can cancel a pending request here. |
 | My Profile | Personal details, avatar and password settings. |
 | Notifications | Updates linking to the related shift or request. |
+| History | A list of the signed-in user's completed or ended transfer requests (approved, rejected, declined, cancelled or expired). Selecting an entry opens the related request details in read-only form. |
