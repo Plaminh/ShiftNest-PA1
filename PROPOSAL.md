@@ -23,15 +23,17 @@ Small cafes and bakeries often arrange shifts and last-minute changes through ch
 
 ## 4. Main flow
 
-The main flow transfers one future shift from Nguyet to Hoang. Nguyet and Hoang are active Employees or Shift Leaders. Minh is the authorized Shift Leader reviewing the request and is neither the sender nor the receiver.
+The main flow transfers one future shift from Employee A (Nguyet), the sender, to Employee B (Hoang), the receiver. Shift Leader (Minh) is the sample independent approver. An authorized Shift Leader or Manager may approve a transfer provided they are neither the sender nor the receiver.
 
-1. **Request:** Nguyet selects the assigned shift in My Schedule, chooses Hoang and sends a request. Its status becomes **Waiting for receiver**; Nguyet remains assigned.
-2. **Response:** Hoang opens the request and selects **Accept** or **Decline**. Accept sends it to Minh for approval; Decline ends the request. Acceptance alone does not change the assignment.
-3. **Approval:** Minh checks the shift and Hoang's eligibility. **Approve transfer** assigns the shift to Hoang and marks the request approved together. **Reject** leaves Nguyet assigned. Both employees can see the outcome and updated schedule on refresh.
+1. **Request:** Employee A selects an assigned future shift, chooses Employee B and submits a transfer request. Its status becomes **Waiting for receiver**, and Employee A remains assigned.
+2. **Response:** Employee B selects **Accept** or **Decline**. Acceptance moves the request to **Waiting for approval** without changing the shift assignment. Declining ends the request.
+3. **Approval:** An authorized Shift Leader or Manager reviews the request and rechecks eligibility and scheduling conflicts. **Approve transfer** assigns the shift to Employee B; **Reject** leaves it assigned to Employee A.
 
-Nguyet can cancel while the request is pending; the shift remains assigned to Nguyet. A shift can have only one pending transfer. Changing its date, time or assignee, or cancelling it, ends the pending request. Requests still unresolved when the shift starts expire when checked.
+The sender can cancel a pending request without changing the shift assignment. A shift can have only one pending transfer request. Changing its date, time or assignee, or cancelling the shift, ends the pending request. An unresolved request expires when the shift starts and its status is next checked. The shift is reassigned only after approval.
 
 ## 5. Scope
+
+The implementation priorities are shift scheduling, availability management and controlled shift transfers.
 
 ### In scope
 

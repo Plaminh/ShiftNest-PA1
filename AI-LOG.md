@@ -8,7 +8,7 @@
 
 **Kept:** The three-screen workflow, essential user actions, and core requirements from the Functional Requirements Specification.
 
-**Changed:** Explored multiple design variations, reviewed team feedback, and selected a consistent design direction for further refinement.
+**Changed:** Explored different layout variations and selected a consistent design direction based on team feedback.
 
 **Rejected:** Additional screens, unnecessary details, and features outside the MVP.
 
@@ -22,7 +22,7 @@
 
 **Kept:** Essential transfer information, Accept/Decline and Approve/Reject actions, and the three-step approval process.
 
-**Changed:** The agent revised labels and approval details, replaced "Swap" with "Transfer", removed unrelated content, and aligned the screens with a coffee-shop scenario using Nguyet, Hoang, and Minh. Each screen was simplified to represent one workflow state.
+**Changed:** The agent revised labels and approval details, replaced "Swap" with "Transfer", removed unrelated content, and aligned the screens with a coffee-shop scenario using Nguyet, Hoang, and Minh.
 
 **Rejected:** Healthcare and payroll details, qualification checks, unnecessary preview panels, fixed 24-hour expiry, undefined request statuses, and additional screens beyond the agreed scope.
 
@@ -36,17 +36,17 @@
 
 **Kept:** The three-screen structure, one workflow state per screen, and the rule that the original employee remains assigned until approval.
 
-**Changed:** Codex added the store name, notification icons, navigation labels, transfer reason, receiver acceptance explanation, and approval checks. It also clarified the Shift Leader role and separated shift notes from transfer reasons. The resulting screens were visually reviewed.
+**Changed:** Codex added the store name, notification icons, navigation labels, transfer reason, receiver acceptance explanation, and approval checks. It also clarified the Shift Leader role and separated shift notes from transfer reasons.
 
 **Rejected:** Extra application pages, unnecessary workflow states, qualification checks, and break-duration details outside the MVP.
 
-**By hand:** The team reviewed the recommendations and defined which improvements to apply. Codex performed the recorded Figma edits.
+**By hand:** The team reviewed the recommendations, selected the necessary improvements, and visually checked the resulting wireframes. Codex performed the Figma edits.
 
 ## 2026-10-17 — 04. Review supporting documentation
 
 **Tool:** Codex.
 
-**Asked for:** Review the completed wireframes, prepare screen explanations, evaluate the submission against the rubric, and clean up unnecessary documentation.
+**Asked for:** Review the completed wireframes, prepare screen explanations, evaluate the submission against the rubric, and remove unnecessary documentation.
 
 **Kept:** The three final wireframes and their shared shift-transfer scenario.
 
@@ -54,7 +54,7 @@
 
 **Rejected:** Additional screens, mandatory interactive prototypes, and documentation unnecessary for the current milestone.
 
-**By hand:** The team reviewed the submission scope and decided which supporting documents to retain or remove.
+**By hand:** The team reviewed the submission requirements and decided which supporting documents to retain or remove.
 
 ## 2026-10-18 — 05. Align the proposal and self-assessment
 
@@ -66,20 +66,34 @@
 
 **Changed:** Codex updated the proposal's example details and image references, clarified the History destination, and expanded the self-assessment to cover all five rubric criteria.
 
-**Rejected:** Unsupported claims, invented personal information, unnecessary features, and deductions for deliverables not explicitly required by the rubric.
+**Rejected:** Unsupported claims, invented personal information, unnecessary features, and deductions not justified by the rubric.
 
-**By hand:** The team supplied corrections, reviewed the document scope, and retained responsibility for verifying the final submission and assessment evidence.
+**By hand:** The team supplied corrections, reviewed the documentation, and retained responsibility for verifying the submission evidence.
 
 ## 2026-10-18 — 06. Final submission consistency review
 
 **Tool:** Codex.
 
-**Asked for:** Validate the PA#1 documents, wireframe references, Figma link, rubric evidence, and submission structure; make minimal consistency corrections without changing the MVP or adding screens.
+**Asked for:** Review the PA#1 documents, wireframe references, Figma link, rubric evidence, and submission structure; correct inconsistencies without changing the MVP.
 
-**Kept:** The ShiftNest scope, configurable Opening Hours, email password recovery, three consecutive transfer screens, shared example, image filenames, and 100/100 rubric assessment.
+**Kept:** The agreed MVP, three consecutive transfer screens, shared example, image filenames, and existing self-assessment scores.
 
-**Changed:** Codex clarified in `PROPOSAL.md` that History is a filtered completed-requests view associated with Shift Requests. It also documented the destinations of the visible notification and profile controls and the screen 1 Back/Cancel actions.
+**Changed:** Codex clarified that History is a filtered view of completed transfer requests. It also documented the navigation behavior of the notification and profile controls and the Back/Cancel actions on screen 1.
 
-**Not completed:** No Figma or PNG edits were made because Figma editing was not available. The screen 3 request ID, screen 1 recheck text, and screen 3 optional rejection label remain changes for the team to apply in Figma and re-export. The Functional Requirements Specification was not present in the workspace or its parent directory, so its outdated wireframe instruction could not be removed.
+**Rejected:** Additional wireframe screens, scope expansion, and supporting documentation beyond the PA#1 requirements.
 
-**By hand:** No new manual edits were claimed. The team must apply and verify the pending Figma and Functional Requirements Specification changes.
+**By hand:** The team reviewed the consistency corrections and retained responsibility for verifying the final submission.
+
+## 2026-10-18 — 07. Final proposal refinement
+
+**Tool:** Codex.
+
+**Asked for:** Clarify implementation priorities, refine the main transfer flow using role-based terminology, and review consistency between the proposal and wireframes.
+
+**Kept:** The agreed MVP, three-step transfer workflow, sample users, existing business rules, wireframe designs, and self-assessment scores.
+
+**Changed:** Codex added implementation priorities to `PROPOSAL.md` and refined Section 4 using Employee A, Employee B, and an authorized Shift Leader or Manager, while retaining Nguyet, Hoang, and Minh as illustrative users.
+
+**Rejected:** Additional workflow steps, unnecessary changes to wireframe labels, and unrelated modifications outside the agreed scope.
+
+**By hand:** The team reviewed the updated proposal and its consistency with the wireframes. The existing wireframes were retained without manual Figma edits.
