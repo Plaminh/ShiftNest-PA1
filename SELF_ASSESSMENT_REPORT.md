@@ -1,32 +1,17 @@
 # Self-assessment - PA#1: Idea and Wireframe
 
-## Submitted by
+### 3. Three screens of the main flow — 35 / 35
 
-| Full name | Student ID |
-| --- | --- |
-| [Full name] | [Student ID] |
-| [Full name] | [Student ID] |
-| [Full name] | [Student ID] |
+The numbered screens clearly follow one transfer from Nguyet to Hoang, with independent approval by Minh. They consistently show 24 October 2026, 07:00–15:30 and the same transfer reason. The submitted 1280 × 960 images are readable. The wireframes distinguish the three actors and make clear that acceptance alone does not transfer the shift. The full-mark claim reflects the clear main-flow sequence. 
 
-## Total claimed
+### 4. Each screen explained — 15 / 15
 
-**TBD / 100**
+We claim full marks based on the explanations embedded in the wireframes: screen 1 identifies requesting a colleague to cover a shift, screen 2 explains responding and that acceptance sends the request for approval, and screen 3 explains reviewing the transfer and approval checks. Action labels and explanatory text communicate the intended progression and that Nguyet remains assigned until approval. 
 
-## Assessment
+### 5. AI-LOG.md — 15 / 15
 
-| Criterion | Max | We claim | Evidence |
-| --- | ---: | ---: | --- |
-| The problem and the users | 20 | TBD | [PROPOSAL.md, sections 2-3](PROPOSAL.md#2-the-problem): scheduling and transfer problems, user roles and their goals. |
-| Scope, with a Not building list | 15 | TBD | [PROPOSAL.md, section 5](PROPOSAL.md#5-scope): features to implement and a specific Not building list. |
-| Three screens of the main flow | 35 | TBD | No evidence yet. Required exports: `wireframes/01-send-request.png`, `wireframes/02-respond-request.png` and `wireframes/03-approve-request.png`. |
-| Each screen explained | 15 | TBD | [PROPOSAL.md, section 6](PROPOSAL.md#6-screens): each user's goal, actions, outcomes and next step, plus supporting navigation destinations. |
-| AI-LOG.md | 15 | TBD | [AI-LOG.md](AI-LOG.md): two entries covering Main flow and wireframe references, and Proposal refinement. |
-| Total | 100 | TBD | Sum of the five scores above. |
+The log names tools and specific requests, describes what was kept and changed, and records rejected suggestions with reasons grounded in the chosen scenario or MVP scope. It distinguishes user decisions from AI edits. The latest entries record this rubric review, rejection-reason clarification, documentation revision and subsequent removal of the companion README at the user’s request. These details support the rubric’s top band.
 
-## What we did not manage
+### What we did not manage — reviewed criteria only
 
-[To be completed.]
-
-## What we would do differently
-
-[To be completed.]
+No clickable prototype was produced; static wireframes are an accepted submission format, so this is not a scoring deficiency. Runtime validation and notification delivery are intended behaviors, not functionality demonstrated by these artifacts.
